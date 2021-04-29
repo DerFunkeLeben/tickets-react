@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #f3f7fa;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+%no-list-decoration {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+%text-style {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    @extend %text-style;
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160px;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        .filter {
+            width: 232px;
+            height: 262px;
+            background: #ffffff;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            color: #4a4a4a;
+            h2 {
+                margin: 0;
+                padding: 20px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 12px;
+                text-transform: uppercase;
+            }
+            .filter__list {
+                @extend %no-list-decoration;
+                li {
+                    line-height: 20px;
+                    font-size: 13px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 20px;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    .checkbox {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                    &:hover {
+                        background: #f1fcff;
+                    }
+                }
+            }
+        }
+        .tickets-container {
+            margin-left: 20px;
+            .tickets-list {
+                @extend %no-list-decoration;
+                .ticket {
+                    @extend %text-style;
+                    background: #fff;
+                    display: block;
+                    width: 502px;
+                    height: 184px;
+                    margin-top: 20px;
+                    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    .ticket-header {
+                        height: 36px;
+                        width: 462px;
+                        padding: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .ticket-cost {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 24px;
+                            color: #2196f3;
+                        }
+                    }
+                    .ticket-details {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 60px 10px 20px;
+                        p {
+                            margin: 0;
+                            font-style: normal;
+
+                            &.ticket-details__caption {
+                                font-size: 12px;
+                                font-weight: 600;
+                                line-height: 18px;
+                                letter-spacing: 0.5px;
+                                text-transform: uppercase;
+                                color: #a0b0b9;
+                            }
+                            &.ticket-details__description {
+                                font-size: 14px;
+                                font-weight: 600;
+                                line-height: 21px;
+                                color: #4a4a4a;
+                            }
+                        }
+                    }
+                }
+            }
+            .tabs {
+                height: 50px;
+                width: 502px;
+                .tabs-btn {
+                    height: 100%;
+                    width: 50%;
+                    cursor: pointer;
+                    color: #4a4a4a;
+                    border: 1px solid #dfe5ec;
+                    outline: none;
+                    border-left: none;
+                    border-right: none;
+                    @extend %text-style;
+                    transition: all 0.3s;
+                    &:first-child {
+                        border-radius: 5px 0 0 5px;
+                        border-left: 1px solid #dfe5ec;
+                    }
+                    &:last-child {
+                        border-radius: 0 5px 5px 0;
+                        border-left: 1px solid #dfe5ec;
+                        border-right: 1px solid #dfe5ec;
+                    }
+                    &:not(.active) {
+                        background: #fff;
+                    }
+                    &.active,
+                    &:hover {
+                        background: #2196f3;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
