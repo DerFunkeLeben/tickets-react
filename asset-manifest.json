@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/tickets-react/static/css/main.dab54d6e.chunk.css",
+    "main.js": "/tickets-react/static/js/main.d249168c.chunk.js",
+    "main.js.map": "/tickets-react/static/js/main.d249168c.chunk.js.map",
+    "runtime-main.js": "/tickets-react/static/js/runtime-main.aae116d1.js",
+    "runtime-main.js.map": "/tickets-react/static/js/runtime-main.aae116d1.js.map",
+    "static/js/2.4ba30d81.chunk.js": "/tickets-react/static/js/2.4ba30d81.chunk.js",
+    "static/js/2.4ba30d81.chunk.js.map": "/tickets-react/static/js/2.4ba30d81.chunk.js.map",
+    "index.html": "/tickets-react/index.html",
+    "static/css/main.dab54d6e.chunk.css.map": "/tickets-react/static/css/main.dab54d6e.chunk.css.map",
+    "static/js/2.4ba30d81.chunk.js.LICENSE.txt": "/tickets-react/static/js/2.4ba30d81.chunk.js.LICENSE.txt",
+    "static/media/Logo.4a04a60e.png": "/tickets-react/static/media/Logo.4a04a60e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aae116d1.js",
+    "static/js/2.4ba30d81.chunk.js",
+    "static/css/main.dab54d6e.chunk.css",
+    "static/js/main.d249168c.chunk.js"
+  ]
+}
